@@ -9,7 +9,8 @@ public class BeanDefinition {
 
     private Class<?> beanClass;
 
-    private String scope = "singleton";
+    private String scope = "singleton"; 
+    // NOTE : we can use an enum for scope, but for simplicity, we'll use a string.
 
     private boolean lazyInit = false;
 
@@ -60,5 +61,5 @@ public class BeanDefinition {
     public void addPropertyValue(String propertyName, Object value) {
         this.propertyValues.put(propertyName, value);
     }
-    
+
 }
